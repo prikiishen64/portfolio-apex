@@ -12,7 +12,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
 <title>Apex IT Service | IT Support & Managed Services Johor Bahru</title>
 <meta name="description" content="Apex IT Service — 10+ years IT experience serving SMEs in Johor Bahru & Masai. Managed IT, cloud migration, Microsoft 365, hardware & Scheduled On-Site Support support. Call +60142642173."/>
-<meta name="keywords" content="IT support Johor Bahru,IT company JB,managed IT services Johor,cloud migration Johor Bahru,Microsoft 365 Johor,IT helpdesk Masai,computer repair Johor,SME IT support JB,Apex IT Service,IT services Johor Bahru"/>
+<meta name="keywords" content="IT support Johor Bahru,managed IT Johor,patch management Johor,EDR endpoint security JB,cybersecurity Johor Bahru,cloud migration Johor,Microsoft 365 Johor,IT helpdesk Masai,SME IT support JB,Apex IT Service"/>
 <meta name="author" content="Apex IT Service"/>
 <meta name="robots" content="index,follow"/>
 <link rel="canonical" href="https://www.apex-it.my/"/>
@@ -463,6 +463,63 @@ footer p{font-family:'DM Mono',monospace;font-size:0.6rem;color:rgba(255,255,255
   display:block;font-size:0.78rem;color:var(--muted);
 }
 .trust-divider{width:1px;height:36px;background:var(--border);flex-shrink:0;}
+
+/* ── PROACTIVE SECTION ── */
+#proactive{background:var(--surface2);}
+.proactive-intro{
+  display:grid;grid-template-columns:1fr 1fr;gap:48px;
+  align-items:center;margin-bottom:56px;
+}
+.proactive-intro-text{}
+.proactive-stat-row{
+  display:flex;align-items:center;gap:16px;
+  background:linear-gradient(135deg,var(--royal),var(--mid));
+  border-radius:6px;padding:22px 24px;color:#fff;
+}
+.psr-icon{font-size:2rem;flex-shrink:0;}
+.psr-num{
+  font-family:'Barlow Condensed',sans-serif;font-weight:900;
+  font-size:2.4rem;color:var(--cyan);line-height:1;
+}
+.psr-label{font-size:0.85rem;color:rgba(255,255,255,0.7);margin-top:2px;}
+.psr-divider{width:1px;height:48px;background:rgba(255,255,255,0.2);flex-shrink:0;}
+.feature-grid{
+  display:grid;grid-template-columns:repeat(2,1fr);gap:18px;
+}
+.feature-card{
+  background:var(--surface);border:1px solid var(--border);
+  border-radius:4px;padding:26px 24px;
+  display:flex;gap:18px;align-items:flex-start;
+  position:relative;overflow:hidden;
+  transition:box-shadow 0.25s,transform 0.2s,border-color 0.25s;
+}
+.feature-card:hover{
+  box-shadow:0 8px 32px var(--shadow-lg);
+  transform:translateY(-2px);border-color:rgba(0,140,200,0.3);
+}
+.feature-card::before{
+  content:'';position:absolute;left:0;top:0;bottom:0;width:3px;
+  background:linear-gradient(to bottom,var(--cyan),var(--royal));
+}
+.fc-icon{
+  width:48px;height:48px;border-radius:4px;flex-shrink:0;
+  background:linear-gradient(135deg,var(--cyan-light),var(--royal-light));
+  border:1px solid var(--border);
+  display:flex;align-items:center;justify-content:center;font-size:1.4rem;
+}
+.fc-title{
+  font-family:'Barlow Condensed',sans-serif;font-weight:700;
+  font-size:1.05rem;text-transform:uppercase;letter-spacing:0.03em;
+  color:var(--text2);margin-bottom:7px;
+}
+.fc-desc{font-size:0.88rem;color:var(--muted);line-height:1.7;}
+.fc-tags{display:flex;flex-wrap:wrap;gap:5px;margin-top:10px;}
+.fc-tag{
+  font-family:'DM Mono',monospace;font-size:0.54rem;
+  letter-spacing:0.1em;text-transform:uppercase;
+  background:var(--royal-light);color:var(--royal);
+  border:1px solid rgba(0,60,140,0.15);padding:3px 9px;border-radius:100px;
+}
 /* ── RESPONSIVE ── */
 @media(max-width:900px){
   nav{padding:0 18px;}
@@ -476,6 +533,8 @@ footer p{font-family:'DM Mono',monospace;font-size:0.6rem;color:rgba(255,255,255
   .trust-bar{padding:14px 18px;}
   .trust-divider{display:none;}
   .svc-grid{grid-template-columns:1fr 1fr;gap:14px;}
+  .proactive-intro{grid-template-columns:1fr;gap:28px;}
+  .feature-grid{grid-template-columns:1fr;}
   .why-grid{grid-template-columns:1fr;gap:36px;}
   .contact-cards{grid-template-columns:1fr 1fr;}
   footer{padding:22px 18px;flex-direction:column;text-align:center;}
@@ -542,7 +601,7 @@ footer p{font-family:'DM Mono',monospace;font-size:0.6rem;color:rgba(255,255,255
 <body>
 
 <!-- FLOATING WA -->
-<a href="https://wa.me/60142642173?text=Hi%20Apex%20IT%20Service%2C%20I%27d%20like%20to%20enquire%20about%20your%20IT%20services." target="_blank" class="wa-float" aria-label="Chat on WhatsApp">
+<a href="https://wa.me/60142642173?text=Hi%20Apex%20IT%20Service%2C%20I%27d%20like%20to%20know%20more%20about%20your%20managed%20IT%20and%20cybersecurity%20services." target="_blank" class="wa-float" aria-label="Chat on WhatsApp">
   <div class="wa-pulse"></div>
   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
 </a>
@@ -555,11 +614,12 @@ footer p{font-family:'DM Mono',monospace;font-size:0.6rem;color:rgba(255,255,255
   <ul class="nav-links">
     <li><a href="#home" onclick="smoothTo(event,'home')">Home</a></li>
     <li><a href="#services" onclick="smoothTo(event,'services')">Services</a></li>
+    <li><a href="#proactive" onclick="smoothTo(event,'proactive')">Security</a></li>
     <li><a href="#why" onclick="smoothTo(event,'why')">Why Us</a></li>
     <li><a href="#faq" onclick="smoothTo(event,'faq')">FAQ</a></li>
     <li><a href="#contact" onclick="smoothTo(event,'contact')">Contact</a></li>
   </ul>
-  <a href="https://wa.me/60142642173?text=Hi%20Apex%20IT%20Service%2C%20I%27d%20like%20to%20enquire%20about%20your%20IT%20services." target="_blank" class="nav-cta">
+  <a href="https://wa.me/60142642173?text=Hi%20Apex%20IT%20Service%2C%20I%27d%20like%20to%20know%20more%20about%20your%20managed%20IT%20and%20cybersecurity%20services." target="_blank" class="nav-cta">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
     WhatsApp Us
   </a>
@@ -571,11 +631,12 @@ footer p{font-family:'DM Mono',monospace;font-size:0.6rem;color:rgba(255,255,255
   <ul>
     <li><a href="#home" onclick="smoothTo(event,'home');toggleMenu()">Home</a></li>
     <li><a href="#services" onclick="smoothTo(event,'services');toggleMenu()">Services</a></li>
+    <li><a href="#proactive" onclick="smoothTo(event,'proactive');toggleMenu()">Security</a></li>
     <li><a href="#why" onclick="smoothTo(event,'why');toggleMenu()">Why Us</a></li>
     <li><a href="#faq" onclick="smoothTo(event,'faq');toggleMenu()">FAQ</a></li>
     <li><a href="#contact" onclick="smoothTo(event,'contact');toggleMenu()">Contact</a></li>
   </ul>
-  <a href="https://wa.me/60142642173?text=Hi%20Apex%20IT%20Service%2C%20I%27d%20like%20to%20enquire%20about%20your%20IT%20services." target="_blank" class="mob-wa">💬 WhatsApp Us Now</a>
+  <a href="https://wa.me/60142642173?text=Hi%20Apex%20IT%20Service%2C%20I%27d%20like%20to%20know%20more%20about%20your%20managed%20IT%20and%20cybersecurity%20services." target="_blank" class="mob-wa">💬 WhatsApp Us Now</a>
 </div>
 
 <!-- HERO -->
@@ -597,7 +658,7 @@ footer p{font-family:'DM Mono',monospace;font-size:0.6rem;color:rgba(255,255,255
       <div class="hero-cta-card">
         <div class="hcc-label">Get a Free IT Consultation</div>
         <p class="hcc-desc">Tell us about your business — we'll recommend the right IT setup with no obligation.</p>
-        <a href="https://wa.me/60142642173?text=Hi%20Apex%20IT%20Service%2C%20I%27d%20like%20to%20enquire%20about%20your%20IT%20services." target="_blank" class="btn-wa" style="width:100%;justify-content:center;margin-bottom:12px;">
+        <a href="https://wa.me/60142642173?text=Hi%20Apex%20IT%20Service%2C%20I%27d%20like%20to%20know%20more%20about%20your%20managed%20IT%20and%20cybersecurity%20services." target="_blank" class="btn-wa" style="width:100%;justify-content:center;margin-bottom:12px;">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
           Chat on WhatsApp
         </a>
@@ -647,9 +708,9 @@ footer p{font-family:'DM Mono',monospace;font-size:0.6rem;color:rgba(255,255,255
       </div>
       <div class="svc-card reveal">
         <div class="svc-icon">🖥️</div>
-        <h3>Managed IT &amp; Helpdesk</h3>
-        <p>Proactive monitoring and a responsive helpdesk — so your team never loses time to IT problems.</p>
-        <div class="svc-tags"><span class="svc-tag">Monitoring</span><span class="svc-tag">Helpdesk</span><span class="svc-tag">Remote Fix</span></div>
+        <h3>Managed IT &amp; Patch Automation</h3>
+        <p>We automatically push software updates to all your devices — Windows, Office, browsers and more — so vulnerabilities get closed before attackers can exploit them. Paired with a responsive helpdesk for your team.</p>
+        <div class="svc-tags"><span class="svc-tag">Auto Updates</span><span class="svc-tag">Patch Scheduling</span><span class="svc-tag">Helpdesk</span><span class="svc-tag">Remote Fix</span></div>
       </div>
       <div class="svc-card reveal">
         <div class="svc-icon">🔧</div>
@@ -671,10 +732,91 @@ footer p{font-family:'DM Mono',monospace;font-size:0.6rem;color:rgba(255,255,255
       </div>
       <div class="svc-card reveal">
         <div class="svc-icon">🛡️</div>
-        <h3>ENDPOINT SECURITY &amp; PROTECTION</h3>
-        <p>Protecting your devices with managed anti-malware, web filtering, and proactive threat hunting.</p>
-        <div class="svc-tags"><span class="svc-tag">EDR</span><span class="svc-tag">Anti-Malware</span><span class="svc-tag">Intrusion Defense</span></div>
+        <h3>Endpoint Security &amp; EDR</h3>
+        <p>Advanced endpoint detection &amp; response (EDR) that catches, stops and remediates threats in real-time — protecting every device in your business before damage occurs.</p>
+        <div class="svc-tags"><span class="svc-tag">EDR</span><span class="svc-tag">Anti-Malware</span><span class="svc-tag">Threat Detection</span><span class="svc-tag">Real-Time Response</span></div>
       </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- PROACTIVE MANAGED IT & CYBERSECURITY -->
+<section class="section" id="proactive" aria-labelledby="pro-h">
+  <div class="section-inner">
+    <div class="eyebrow">Proactive Protection</div>
+    <h2 class="sec-title" id="pro-h">Managed IT &amp; Cybersecurity<br><span class="hl">Working While You Sleep</span></h2>
+
+    <div class="proactive-intro">
+      <div class="proactive-intro-text">
+        <p style="font-size:1.05rem;color:var(--muted);line-height:1.8;margin-bottom:20px;">
+          Most cyberattacks succeed because of <strong style="color:var(--text2);">unpatched software and undetected threats.</strong>
+          We eliminate both — automatically, continuously, and without disrupting your team.
+        </p>
+        <p style="font-size:0.95rem;color:var(--muted);line-height:1.75;">
+          Our managed IT platform monitors every device in your business around the clock, pushes security patches before attackers can exploit them, and deploys advanced endpoint detection to stop threats in real-time — all without you lifting a finger.
+        </p>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:12px;">
+        <div class="proactive-stat-row reveal">
+          <div class="psr-icon">🛡️</div>
+          <div class="psr-divider"></div>
+          <div>
+            <div class="psr-num">90%</div>
+            <div class="psr-label">of cyberattacks blocked by keeping software up-to-date</div>
+          </div>
+        </div>
+        <div class="proactive-stat-row reveal" style="background:linear-gradient(135deg,#006ab5,var(--mid));">
+          <div class="psr-icon">⚡</div>
+          <div class="psr-divider"></div>
+          <div>
+            <div class="psr-num">24/7</div>
+            <div class="psr-label">Continuous monitoring &amp; automated threat response</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="feature-grid">
+      <div class="feature-card reveal">
+        <div class="fc-icon">🔄</div>
+        <div>
+          <div class="fc-title">Automated Patch Management</div>
+          <p class="fc-desc">We keep all your software automatically up-to-date — Windows, Office, Chrome, Zoom and hundreds more. No manual updates, no forgotten patches, no open doors for attackers.</p>
+          <div class="fc-tags"><span class="fc-tag">Windows Update</span><span class="fc-tag">3rd-Party Apps</span><span class="fc-tag">Zero Downtime</span></div>
+        </div>
+      </div>
+      <div class="feature-card reveal">
+        <div class="fc-icon">🗺️</div>
+        <div>
+          <div class="fc-title">Vulnerability Assessment</div>
+          <p class="fc-desc"><strong style="color:var(--text2)">Before an attack happens</strong> — we scan your systems for weak spots like unpatched software, open ports and misconfigured settings. Think of it as a security health check that runs continuously, so we fix gaps before hackers find them.</p>
+          <div class="fc-tags"><span class="fc-tag">Pre-Attack</span><span class="fc-tag">Risk Report</span><span class="fc-tag">Gap Fixing</span></div>
+        </div>
+      </div>
+      <div class="feature-card reveal">
+        <div class="fc-icon">🚨</div>
+        <div>
+          <div class="fc-title">Endpoint Detection &amp; Response (EDR)</div>
+          <p class="fc-desc"><strong style="color:var(--text2)">When an attack is happening</strong> — EDR watches device behaviour in real-time and instantly isolates and kills active threats like ransomware, before they spread. Unlike antivirus that only blocks known viruses, EDR catches brand-new attacks that have never been seen before.</p>
+          <div class="fc-tags"><span class="fc-tag">During-Attack</span><span class="fc-tag">Ransomware Isolation</span><span class="fc-tag">Zero-Day Defence</span></div>
+        </div>
+      </div>
+      <div class="feature-card reveal">
+        <div class="fc-icon">🖥️</div>
+        <div>
+          <div class="fc-title">Remote Support &amp; Software Deployment</div>
+          <p class="fc-desc">Fast, secure remote access to any device in your business — we fix issues and deploy the apps your team needs instantly, no matter where they're working.</p>
+          <div class="fc-tags"><span class="fc-tag">Remote Access</span><span class="fc-tag">App Deployment</span><span class="fc-tag">Secure Session</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div style="text-align:center;margin-top:40px;">
+      <a href="https://wa.me/60142642173?text=Hi%20Apex%20IT%20Service%2C%20I%27d%20like%20to%20know%20more%20about%20your%20managed%20IT%20and%20cybersecurity%20services." target="_blank" class="btn-wa" style="display:inline-flex;">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Ask About Managed IT &amp; Security
+      </a>
     </div>
   </div>
 </section>
@@ -757,7 +899,7 @@ footer p{font-family:'DM Mono',monospace;font-size:0.6rem;color:rgba(255,255,255
           <span class="faq-q-text">How fast can you respond to an IT emergency?</span>
           <span class="faq-arrow">▼</span>
         </button>
-        <div class="faq-body"><div class="faq-body-inner">For managed IT clients we aim to respond within the hour. For minor issues, we can often start remotely within hour For on-site emergencies in Johor Bahru and Masai, we typically attend the same day.</div></div>
+        <div class="faq-body"><div class="faq-body-inner">For managed IT clients we aim to respond within the hour. For minor issues, we can often start remotely within hour. For on-site emergencies in Johor Bahru and Masai, we typically attend the same day.</div></div>
       </div>
       <div class="faq-item">
         <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false">
@@ -765,6 +907,20 @@ footer p{font-family:'DM Mono',monospace;font-size:0.6rem;color:rgba(255,255,255
           <span class="faq-arrow">▼</span>
         </button>
         <div class="faq-body"><div class="faq-body-inner">Yes — SMEs are our primary focus. With 10+ years of experience, we understand that small and medium businesses in Johor need practical, affordable IT without enterprise-level complexity or cost. We right-size every solution to fit your business.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false">
+          <span class="faq-q-text">What is patch management and why does my business need it?</span>
+          <span class="faq-arrow">▼</span>
+        </button>
+        <div class="faq-body"><div class="faq-body-inner">Patch management means keeping all the software on your computers automatically updated — Windows, Office, browsers, Zoom and more. Outdated software is the #1 cause of successful cyberattacks. We automate this process entirely, so your systems are always protected without your team having to do anything.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false">
+          <span class="faq-q-text">What is EDR and how is it different from normal antivirus?</span>
+          <span class="faq-arrow">▼</span>
+        </button>
+        <div class="faq-body"><div class="faq-body-inner">Traditional antivirus only blocks known threats. EDR (Endpoint Detection &amp; Response) is a next-generation solution that monitors device behaviour in real-time, detects suspicious activity — even from new or unknown threats like ransomware — and responds automatically to contain the damage. For Johor SMEs handling sensitive client data, EDR is now essential, not optional.</div></div>
       </div>
     </div>
   </div>
@@ -776,7 +932,7 @@ footer p{font-family:'DM Mono',monospace;font-size:0.6rem;color:rgba(255,255,255
     <div class="eyebrow">Get In Touch</div>
     <h2 class="sec-title" id="contact-h">Ready to Reach<br><span class="hl">Your Apex?</span></h2>
     <p class="sec-sub" style="margin:0 auto 32px;text-align:center;">WhatsApp us for a fast reply — no forms, no waiting. Just real help from our Johor team.</p>
-    <a href="https://wa.me/60142642173?text=Hi%20Apex%20IT%20Service%2C%20I%27d%20like%20to%20enquire%20about%20your%20IT%20services." target="_blank" class="wa-cta">
+    <a href="https://wa.me/60142642173?text=Hi%20Apex%20IT%20Service%2C%20I%27d%20like%20to%20know%20more%20about%20your%20managed%20IT%20and%20cybersecurity%20services." target="_blank" class="wa-cta">
       <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
       Chat on WhatsApp Now
     </a>
@@ -787,7 +943,7 @@ footer p{font-family:'DM Mono',monospace;font-size:0.6rem;color:rgba(255,255,255
     </div>
   </div>
   <div class="contact-cards" style="max-width:1100px;margin:0 auto;position:relative;z-index:1;">
-    <div class="cc"><div class="ico">💬</div><div class="lbl">WhatsApp</div><div class="val">+60 16-350 7847</div></div>
+    <div class="cc"><div class="ico">💬</div><div class="lbl">WhatsApp</div><div class="val">+6014-2642173</div></div>
     <div class="cc"><div class="ico">✉️</div><div class="lbl">Email</div><div class="val">sales@apex-it.my</div></div>
     <div class="cc"><div class="ico">🌐</div><div class="lbl">Website</div><div class="val">www.apex-it.my</div></div>
     <div class="cc"><div class="ico">📍</div><div class="lbl">Location</div><div class="val">Masai, Johor Bahru</div></div>
@@ -801,9 +957,9 @@ footer p{font-family:'DM Mono',monospace;font-size:0.6rem;color:rgba(255,255,255
   </a>
   <p>© 2026 Apex IT Service · Masai, Johor Bahru, Malaysia</p>
   <ul class="footer-links">
-    <li><a href="#services" onclick="smoothTo(event,'services')">Services</a></li>
-    <li><a href="#faq" onclick="smoothTo(event,'faq')">FAQ</a></li>
-    <li><a href="#contact" onclick="smoothTo(event,'contact')">Contact</a></li>
+    <li>
+    <li>
+    <li>
   </ul>
 </footer>
 

@@ -24,63 +24,89 @@
   <meta property="og:url" content="https://www.apex-it.my/"/>
   <meta property="og:site_name" content="Apex IT Service"/>
 
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Apex IT Service",
+  "image": "https://apex-it.my/logo.png",
+  "@id": "https://apex-it.my/#organization",
+  "url": "https://apex-it.my",
+  "telephone": "+60142642173",
+  "email": "sales@apex-it.my",
+  "priceRange": "$$",
+  "openingHours": "Mo-Sa 09:00-18:00",
+  "description": "Authorized reseller and provider for Microsoft 365 licensing, Sophos Intercept X cybersecurity, M365 migrations, and automated cloud backups across Johor and Singapore.",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Masai",
+    "addressRegion": "Johor",
+    "postalCode": "81750",
+    "addressCountry": "MY"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 1.4927,
+    "longitude": 103.8844
+  },
+  "areaServed": [
+    { "@type": "City", "name": "Permas Jaya" },
+    { "@type": "City", "name": "Bandar Seri Alam" },
+    { "@type": "City", "name": "Masai" },
+    { "@type": "City", "name": "Johor Bahru" },
+    { "@type": "City", "name": "Mount Austin" },
+    { "@type": "City", "name": "Tebrau" },
+    { "@type": "City", "name": "Ulu Tiram" },
+    { "@type": "City", "name": "Bukit Indah" },
+    { "@type": "City", "name": "Iskandar Puteri" },
+    { "@type": "City", "name": "Gelang Patah" },
+    { "@type": "City", "name": "Skudai" },
+    { "@type": "City", "name": "Senai" },
+    { "@type": "City", "name": "Kulai" },
+    { "@type": "City", "name": "Pasir Gudang" },
+    { "@type": "City", "name": "Pengerang" },
+    { "@type": "AdministrativeArea", "name": "Johor" },
+    { "@type": "Country", "name": "Singapore" }
+  ],
+  "knowsAbout": [
+    "Microsoft 365 Business Licensing",
+    "Microsoft 365 Exchange & SharePoint Migration",
+    "Sophos Intercept X Endpoint Protection",
+    "Cloud-to-Cloud Data Backup",
+    "Remote Cloud Tenant Administration"
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Software Licensing & Cloud Services",
+    "itemListElement": [
       {
-        "@type": "LocalBusiness",
-        "@id": "https://www.apex-it.my/#localbusiness",
-        "name": "Apex IT Service",
-        "description": "Microsoft 365 licensing, Sophos cybersecurity, and cloud backup solutions for SMEs in Johor Bahru and Masai, Malaysia.",
-        "url": "https://www.apex-it.my",
-        "telephone": "+60142642173",
-        "email": "sales@apex-it.my",
-        "priceRange": "$$",
-        "openingHours": "Mo-Sa 09:00-18:00",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Masai",
-          "addressRegion": "Johor",
-          "postalCode": "81750",
-          "addressCountry": "MY"
-        },
-        "geo": {
-          "@type": "GeoCoordinates",
-          "latitude": 1.4927,
-          "longitude": 103.8844
-        },
-        "hasOfferCatalog": {
-          "@type": "OfferCatalog",
-          "name": "IT Software Services",
-          "itemListElement": [
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "Microsoft 365 Licenses & Setup"
-              }
-            },
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "Sophos Endpoint Security"
-              }
-            },
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "Cloud Backup Solutions"
-              }
-            }
-          ]
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Microsoft 365 License Supply & Migration",
+          "description": "Direct supply of M365 Business licenses, plan consolidation, and remote migration to Exchange Online and SharePoint."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Sophos Endpoint Protection & EDR",
+          "description": "Software license provisioning and remote deployment of Sophos Intercept X ransomware protection."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Cloud-to-Cloud Backup Setup",
+          "description": "Automated offsite backup setup for Microsoft 365 emails, OneDrive, and SharePoint files."
         }
       }
     ]
   }
-  </script>
+}
+</script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
